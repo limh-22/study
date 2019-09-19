@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .red{
+        width: 100px;
+        height: 100px;
+        background-color: red ;
+    }
+    .blue{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+</style>
+<body>
+    <div class="red" id="div"></div>
+    <script>
+        var a = 10;
+        var b = 20;
+        // ? true: false
+        //你要比较的内容 ?  对 ： 不对
+        a<b? alert('yes') :alert('no')
+
+        div.onclick = function(){
+            console.log(div.className)
+            div.className=='red'?div.className='blue':div.className='red'
+        }
+    </script>
+</body>
+</html>

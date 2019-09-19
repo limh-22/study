@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var res = window.prompt("请输入含有数字的字符串","");
+        //正则表达式
+        var regexp = /[0-9]/g;
+        //模式匹配取出数字，数组形式
+        var arr = res.match(regexp);
+         
+        alert(arr.toString())
+     </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>worK</title>
+</head>
+<body>
+     <input type="text" id="btn">
+     <input type="text" id="btn1">
+     <button id="btn2">计算</button>
+     <span id="jg"></span>
+    <script>
+        var btn = document.getElementById('btn')
+        var btn1 = document.getElementById('btn1')
+        var btn2 = document.getElementById('btn2')
+        var jg = document.getElementById('jg')
+        //点击计算按钮
+        btn2.onclick = function (){
+            jg.innerhtml = parseInt(Number(btn.value)) + parseInt(Number(btn1.value))
+        }
+        
+    </script>
+</body>
+</html>

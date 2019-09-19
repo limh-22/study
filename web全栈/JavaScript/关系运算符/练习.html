@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="int1">
+    <script>
+        var int1 = document.getElementById('int1')
+        function btn(){
+            if(int1.value<=6){
+                alert('你可以免费享用哦')
+            }else if(int1.value>=80){
+                 alert('您可以享受5折优惠哦')
+            }else{
+            alert('不好意思，您必须付全款')
+            }
+        }
+        btn();
+    </script>
+</body>
+</html>
