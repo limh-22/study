@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>work</title>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+        var t =document.getElementsByTagName('div');
+        for(i = 0 ;i < t.length;i++){
+            t[i].style.width='50px';
+            t[i].style.height='50px';
+            t[i].style.backgroundColor = 'red';
+            t[i].style.display = 'inline-block';
+        }
+        t[2].style.backgroundColor='blue'; 
+    </script>
+</body>
+</html>

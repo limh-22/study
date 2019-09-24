@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+    <h2 id="div">dvsdbfs</h2>
+    <script>
+         var div = document.getElementById('div');
+         console.log(div.tagName);
+
+         //方法一:
+         //那些标签是加粗的 b,strong,h1~h6
+         //H1||H2||H3||H4||H5||H6||B||STRONG
+        if(div.tagName == 'H1'|| div.tagName == 'H2'||div.tagName == 'H3'||div.tagName == 'H4'||div.tagName == 'H5'||div.tagName == 'H6'||div.tagName == 'B'||div.tagName == 'STRONG'){
+            div.style.fontWeight = 200 ;
+        }
+
+        //方法二：
+        //不管是不是粗体，统一变为细体
+        div.style.fontWeight = 200 ;
+
+        //方法三
+        var arr = ['H1','H2','H3','H4','H5','H6','B','STRONG'];
+        //console.log(arr.indexof('DIV'));
+        //检测数组里是否有粗体的标签名，返回-1以外的都是粗体
+        var isTrue = arr.indexof(div.tagName);
+        console.log(isTure);
+        //判断如是粗体标签名  就改变样式
+        if(isTrue != -1){
+            div.style.fontWeight = 200;
+            div.style.color = 'red';
+        }
+
+    </script>
+</body>
+</html>

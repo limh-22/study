@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #big{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+       #one {
+          width: 50px;
+          height: 50px;
+          background-color: red;
+          margin: 20px ;
+       }
+    </style>
+</head>
+<body>
+    <div id="big">
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+    </div>
+    <script>
+       var divs = document.getElementById('one');
+       for(var i=0;i<divs.length;i++){
+           divs[i].onclick = function (){
+               this.style.backgroundColor = 'blue';
+           }
+       }
+    </script>
+</body>
+</html>

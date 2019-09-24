@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div"></div>
+    <script>
+        //找一个变量接住计算的和，最开始是0
+        var a = 0;
+        var i = 1;
+        while(i<=10){
+           a += i;//累加专用（套路）
+            i++;
+
+        }    
+        
+        //验证最后的累加和
+        console.log(a)
+    </script>
+    <script> 
+        var divs =document.getElementById('div')
+        var b = 0;
+        var c = 1;
+        while(c<=100){
+            b += c;
+            c++;
+    }
+        div.innerHTML = b;
+    </script>
+</body>
+</html>
