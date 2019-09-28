@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table 一行三列</title>
+</head>
+<body>
+    <table id="table"></table>
+    <script>
+       var a = document.getElementById('table');
+       for(var i = 1;i <2 ; i++){
+          var b = document.createElement('tr');
+          a.appendChild(b);
+       }
+      
+       for(var i=0;i<3;i++){
+        var d = document.createElement('td');
+        b.appendChild(d);
+       }
+    </script>
+</body>
+</html>

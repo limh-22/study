@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ul">
+      
+    </ul>
+    <script>
+        //用一个变量承接在文档中‘创建’的一个元素
+        var div = document.createElement('div');
+        //将已经创建的元素放到想放的位置
+        document.body.appendChild(div);
+
+        var h1 = document.createElement('h1');
+        var a = document.createElement('a');
+        h1.appendChild(a);
+
+        var p = document.createElement('p');
+        var span = document.createElement('span');
+        p.appendChild(span);
+
+        
+        var ul = document.getElementById('ul');
+
+        var li = document.createElement('li');
+        ul.innerHTML='<li></li><li></li><li></li>';
+        
+        // for(var i = 0; i < 3;i++){
+        //     var li = document.createElement('li');
+        //     ul.appendChild(li);
+        // }
+    </script>
+</body>
+</html>

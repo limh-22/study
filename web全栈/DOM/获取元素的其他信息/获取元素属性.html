@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv" class="box" data-ww="yes"></div>
+    <a href="http://baidu.com">baidu</a>
+    <script>
+        var div = document.getElementById('mydiv');
+        var a = document.getElementsByTagName('a');
+
+        console.log(div.getAttribute('data-ww'));
+        console.log(a.getAttribute('href'));
+    </script>
+</body>
+</html>

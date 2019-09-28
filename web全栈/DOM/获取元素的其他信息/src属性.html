@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+         img{
+             width: 300px;
+             border: 1px solid black;
+         }
+         div{
+             width: 130px;
+             text-align: center;
+             background-color: rgb();
+         }
+         div{
+             display: none;
+         }
+    </style>
+</head>
+<body>
+    <img src="1.gif" alt="">
+    <br>
+    <img src="2.jpg" alt="">
+    <div>动图</div>
+    <script>
+        var imgs = document.getElementsByTagName('img');
+        var divs = document.getElementsByTagName('div');
+        for(var i =0;i<img.length;i++){
+            var a = imgs[i].getAttribute('src');
+            if(a.indexof('gif')!= -1){
+                divs[i].style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
